@@ -68,7 +68,17 @@ public class MyBall : MonoBehaviour
         if (other.name == "Cube")
             rigid.AddForce(Vector3.up * 2, ForceMode.Impulse);
     }
+
+
+
+
+
+    public void Jump()
+    {
+        rigid.AddForce(Vector3.up * 20, ForceMode.Impulse);
+    }
 }
 
 // 출처 : https://www.youtube.com/watch?v=kYmYCMAiOUk&list=PLO-mt5Iu5TeZa9dsqMVvXuSfVxwR_2AOz&index=10
 // 출처 : https://www.youtube.com/watch?v=salZ7t98xi8&list=PLO-mt5Iu5TeZa9dsqMVvXuSfVxwR_2AOz&index=12
+// 출처 : https://www.youtube.com/watch?v=k4YUJy-otDs&list=PLO-mt5Iu5TeZa9dsqMVvXuSfVxwR_2AOz&index=13
